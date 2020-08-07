@@ -24,7 +24,6 @@ namespace DeliverEatRevamp
             this.Receiver = "genericjson";
         }
 
-        [AcceptVerbs("POST")]
         [HttpPost]
         public override Task ExecuteAsync(string generator, WebHookHandlerContext context)
         {
