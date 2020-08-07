@@ -33,7 +33,7 @@ namespace DeliverEatRevamp
                 // Get JSON from WebHook
            //     CyberSourceHook test = new CyberSourceHook();
                 JObject data = context.GetDataOrDefault<JObject>();
-                StreamWriter sw = new StreamWriter("C:\\VisualStudio\\log1.txt", true);
+                StreamWriter sw = new StreamWriter("log1.txt", true);
                 sw.WriteLine(data);
            //     CyberSourceHook request = JsonConvert.DeserializeObject<CyberSourceHook>(data.Root.ToString());
                 if (context.Id == "i")
